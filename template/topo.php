@@ -23,20 +23,28 @@
 		<ul>
 		       <?php
 		       
-		       
                    $paginas[] = array('url' => 'index.php', 'label' => 'Home');
                    $paginas[] = array('url' => 'sobre.php', 'label' => 'Sobre a Dexter');
                    $paginas[] = array('url' => 'servicos.php', 'label' => 'Serviços');
                    $paginas[] = array('url' => 'cadastro.php', 'label' => 'Cadastre-se');
                    $paginas[] = array('url' => 'contato.php', 'label' => 'Contato');
-    foreach ($paginas as $page) {
-                  
-              print("$page <br/>"); 
                    
-                   }
-                    
+                  
+                   
+                   // print_r($paginas);
+                   
+
                    ?>
-	           <?php echo 'Exercícios'; ?>
+	           <?php 
+	                
+	              foreach ($paginas as $page){
+	               echo "<li><a href=";
+	               echo $paginas[0]['url'];
+	               echo "> ";
+	               echo $paginas[1]['label'];
+	               echo "</a></li>";
+	            }
+	               ?>
 		</ul>
 	</nav>
 </div>
