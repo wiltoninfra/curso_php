@@ -1,7 +1,4 @@
-    <?php 
-    require 'template/topo.php';
-        
-    ?>
+
 
 <!doctype html>
 <html dir="ltr" lang="pt-BR">
@@ -14,7 +11,7 @@
 </head>
 <body>
     <header class="header">
-        <?php rodape ?>
+        <?php  require 'template/topo.php'; ?>
     </header>
 
     <div class="container content">

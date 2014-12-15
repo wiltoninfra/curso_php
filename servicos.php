@@ -1,8 +1,4 @@
-    <?php 
-    require 'template/topo.php';
-        
-    ?>
-
+ 
 <!doctype html>
 <html dir="ltr" lang="pt-BR">
 <head>
@@ -14,7 +10,7 @@
 </head>
 <body>
     <header class="header">
-       <?php #topo ?>
+       <?php  require 'template/topo.php'; ?>
     </header>
 
 

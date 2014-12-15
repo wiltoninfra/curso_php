@@ -13,7 +13,7 @@
 			<img src="<?php #url_icone ;?>" alt="Nome Imagem">
 			<figcaption>
 				<strong><?php #nome;?></strong>
-				<p><?php echo #descricao ?></p>
+				<p><?php echo #descricaos ?></p>
 			</figcaption>
 		</figure>
 	</li>

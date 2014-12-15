@@ -1,10 +1,10 @@
     <?php 
-    require 'template/topo.php';
-        
+    
+    
     ?>
     
     <header class="header">
-           <?php #Topo ?>
+           <?php require 'template/topo.php'; ?>
     </header>
     <?php
         $banners = array(
@@ -39,24 +39,43 @@
 
         )
     ?>
+    
+    
+    
     <section class="banner">
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
           <!-- Wrapper for slides -->
 
           <div class="carousel-inner">
-            <?php #Banner --- Inicio Laço ?>
-                <div class="item" style="background-image:url('<?php #Url Banner ?>')">
-                  <div class="container">
-                    <div class="row">
-                        <div class="span12">
-                            <h2><?php #Nome do Banner ?></h2>
-                            <p><?php #Descriçao ?></p>
+            <?php #Banner --- Inicio Laço
+                
+        foreach ($banners as $banners => $paginas) {
+            $url = $paginas['url'];
+                ?>
+                
+                <div class='item' style="background-image:url('<?php $url ?>')">';
+               
+                <?php 
+                echo '<div class="container">';
+                   
+                  
+                    echo '<div class="row">';
+                    echo '<div class="span12">';
+                    echo '<h2>';
+                    echo $paginas['nome'];
+                    echo '</h2>';
+    
+
+}
+    
+    ?>
+                            <p></p>
                         </div>
                     </div>
                   </div>
                </div>
-           <?php #Banner ---- Fim Laço?>
+           
          </div>
 
           <!-- Controls -->
@@ -70,11 +89,11 @@
     </section>
 
     <section class="vantagens">
-        <?php #Vantagens ?>
+        
     </section>
 
     <section class="funcionalidades">
-        <?php #Funcionalidades ?>
+       
     </section>
 
     <section class="cadastro">
