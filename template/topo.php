@@ -37,14 +37,25 @@
                    ?>
 	           <?php 
 	                
-	              foreach ($paginas as $page){
-	               echo "<li><a href=";
-	               echo $paginas[0]['url'];
-	               echo "> ";
-	               echo $paginas[1]['label'];
-	               echo "</a></li>";
-	            }
-	               ?>
+	              foreach ($paginas as $paginas){
+                          
+	              echo "<li>";
+                      echo '<a href="';
+                      echo $paginas['url'];
+                      echo '">';                      
+                      echo $paginas['label'];
+                      echo "</a>";
+                      echo "</li>";
+                       
+                      }
+                      
+                      ?>
+                    
+                    
+                    
+                    
+
+                    
 		</ul>
 	</nav>
 </div>
