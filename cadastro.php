@@ -1,4 +1,8 @@
+<?php 
+session_start();
+require 'envia.php';
 
+?>
 <!doctype html>
 <html dir="ltr" lang="pt-BR">
 <head>
@@ -25,38 +29,42 @@
 			<img src="img/banner-cadastro.jpg" alt="Banner Sobre">
 		</div>
 
-		<form action="#" method="post" class="form">
+		
+		<?php valida($_POST);?>
+		
+		<form action="" method="post" class="form">
+			
 			<p>
 				<label for="nome">Nome/Razao</label> <input type="text" name="nome"
-					id="nome_razao" required>
+					id="nome_razao">
 			</p>
 			<p>
 				<label for="email">Email</label> <input type="email" name="email"
-					id="email" required>
+					id="email" >
 			</p>
 			<p>
 				<label for="tel">Telefone</label> <input type="tel" name="telefone"
-					id="telefone" required>
+					id="telefone" >
 			</p>
 			<p>
 				<label for="cel">Celular</label> <input type="tel" name="celular"
-					id="celular"  required>
+					id="celular"  >
 			</p>
 			<p>
 				<label for="cep">Cep</label> <input type="tel" name="cep" id="tel"
-					 required>
+					 >
 			</p>
 			<p>
 				<label for="endereco">Endereço</label> <input type="tel"
-					name="telefone" id="bai" required>
+					name="telefone" id="bai" >
 			</p>
 			<p>
 				<label for="bairro">Bairro</label> <input type="tel" name="bairro"
-					id="tel" required>
+					id="tel" >
 			</p>
 			<p>
 				<label for="cidade">Cidade</label> <input type="tel" name="cidade"
-					id="cidade" required>
+					id="cidade" >
 			</p>
 			<p>
 				<label for="Estado">Estado</label>
@@ -100,7 +108,7 @@
 	<footer class="footer">
         <?php require 'template/rodape.php'; ?>
     </footer>
-
+<?php session_destroy();?>
 </body>
 
 </html>
