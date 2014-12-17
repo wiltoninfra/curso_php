@@ -1,6 +1,18 @@
 <?php
 
-
+foreach ($_POST as $dados) {
+    if ($dados === false) {
+        echo '<br/>';
+        echo $dados;
+        echo '<br/>';
+    }  else {
+       echo "nada <br>";
+    } 
+       
+       
+         
+}
+/*
 
 function valida ($nome) { 
     if (empty($nome['email'])) {

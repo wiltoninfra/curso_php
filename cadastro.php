@@ -1,6 +1,9 @@
 <?php 
 session_start();
-require 'envia.php';
+
+//require 'envia.php';
+
+$nome = $_POST;
 
 ?>
 <!doctype html>
@@ -29,12 +32,30 @@ require 'envia.php';
 			<img src="img/banner-cadastro.jpg" alt="Banner Sobre">
 		</div>
 
+		<?php 
+		function nome () {
+		    if (empty($nome['nome'])) 
+            {
+            echo '<div class="alert-error">';
+            echo 'Campo Nome Nao Pode Ser Vazio';
+	        echo '</div>';
+	        } 
+	        else 
+            { 
+            echo '<div class="alert-error">';
+            echo 'Nome Enviado com sucesso';
+            echo '</div>';
+            }
+            }
 		
-		<?php valida($_POST);?>
+		?>
 		
 		<form action="" method="post" class="form">
-			
+			 <?php nome (); ?>
 			<p>
+			
+		
+		
 				<label for="nome">Nome/Razao</label> <input type="text" name="nome"
 					id="nome_razao">
 			</p>
@@ -100,7 +121,7 @@ require 'envia.php';
 				</select>
 			</p>
 			<p>
-				<button class="btn">Enviar</button>
+				<input type='submit' class="btn" value='Enviar'>
 			</p>
 		</form>
 	</div>

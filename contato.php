@@ -26,11 +26,11 @@
             <form action="#" method="post" class="form">
                 <p>
                     <label for="nome">Nome</label>
-                    <input type="text" name="nome" id="nome" placeholder="Nome" required>
+                    <input type="text" name="nome" id="nome" placeholder="Nome">
                 </p>
                 <p>
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="seu@email.com" required>
+                    <input type="email" name="email" id="email" placeholder="seu@email.com" >
                 </p>
                 <p>
                     <label for="tel">Telefone</label>
